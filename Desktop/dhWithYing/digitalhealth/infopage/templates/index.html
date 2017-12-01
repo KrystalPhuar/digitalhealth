@@ -1,0 +1,101 @@
+<html>
+ <body>
+  <p>
+   {% extends "base_generic.html" %}
+{% load static %}
+
+{% block styles %}
+   <link href="{% static 'css/index.css' %}" rel="stylesheet"/>
+   {% endblock %}
+
+{% block content %}
+  </p>
+  <div class="display">
+   <div class="label-horizontal">
+    <div class="label-h" id="lblh1">
+     Imaging
+    </div>
+    <div class="label-h" id="lblh2" style="left: 45px">
+     Modelling
+    </div>
+    <div class="label-h" id="lblh3" style="left: 90px">
+     Data Security
+    </div>
+    <div class="label-h" id="lblh4" style="left: 135px">
+     Human Factors
+    </div>
+   </div>
+   <div class="label-vertical">
+    <div id="lbl1" style="top: 30%">
+     Biological System
+    </div>
+    <div id="lbl2" style="top: 45px">
+     Critical Care
+    </div>
+    <div id="lbl3" style="top: 90px">
+     Child Health
+    </div>
+    <div id="lbl4" style="top: 135px">
+     Mobility
+    </div>
+   </div>
+   <div>
+    <div class="grid">
+     <div class="v1" id="l1" style="left: 45px">
+     </div>
+     <div class="v1" id="l2" style="left: 90px">
+     </div>
+     <div class="v1" id="l3" style="left: 135px">
+     </div>
+     <div class="v1" id="l4" style="left: 180px">
+     </div>
+    </div>
+    <div class="hr-grid">
+     <div class="h1" id="hl1" style="top: 0px">
+     </div>
+     <div class="h1" id="hl2" style="top: 45px">
+     </div>
+     <div class="h1" id="hl3" style="top: 90px">
+     </div>
+     <div class="h1" id="hl4" style="top: 135px">
+     </div>
+    </div>
+   </div>
+   <div class="bubble">
+    <div class="circle" id="bsi" style="top: 4px; left: 50px; width: 15px; height: 15px;">
+    </div>
+    <div class="circle" id="bsm" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="bsds" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="bshf" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="ccm" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="ccds" style="top: 39px; left: 130px; width: 35px; height: 35px;">
+    </div>
+    <div class="circle" id="cci" style="top: 39px; left: 40px; width: 35px; height: 35px;">
+    </div>
+    <div class="circle" id="cchf" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="chm" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="chds" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="chi" style="width: 0px; height: 0px;">
+    </div>
+    <div class="circle" id="chhf" style="top: 90px; left: 183px;">
+    </div>
+    <div class="circle" id="mds" style="top: 135px; left: 138px;">
+    </div>
+    <div class="circle" id="mi" style="top: 135px; left: 48px;">
+    </div>
+    <div class="circle" id="mm" style="top: 135px; left: 93px;">
+    </div>
+    <div class="circle" id="mhf" style="top: 135px; left: 183px;">
+    </div>
+   </div>
+  </div>
+  {% endblock %}
+ </body>
+</html>
